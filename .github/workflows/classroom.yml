@@ -32,7 +32,7 @@
           # Cache are also OS-specific, so we prefix the cache key with the current OS' name.
           - name: Cache Dependencies
             id: cache
-            uses: actions/cache@v2
+            uses: actions/cache@v3
             with:
               path: ~/.stack
               key: ${{ runner.os }}-${{ steps.cache_key.outputs.key }}
